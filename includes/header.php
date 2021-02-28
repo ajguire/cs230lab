@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,6 +10,7 @@
         <title>Website Title TBD</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -30,23 +35,24 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+            <?php if (isset($_SESSION['uid'])){               
+            
+                 echo '<li class="nav-item">
+                    <a class="nav-link" href="includes/logout.php">Logout</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li> 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Reviews
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Replace Me</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Replace Me 2</a>
-                    </div>
-                </li>
+                    <a class="nav-link" href="profile.php">Profile</a>
+                </li>';
+            }
+            else {
+                echo '<li class="nav-item active">
+                <a class="nav-link" href="login.php">Login</a>
+            </li>';
+            }
+            ?>
+            <li class="nav-item active">
+                <a class="nav-link" href="../index.php">Home</a>
+            </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
