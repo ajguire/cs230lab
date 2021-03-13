@@ -42,6 +42,12 @@ session_start();
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="profile.php">Profile</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="admin.php">Admin</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="gallery.php">Gallery</a>
                 </li>';
             }
             else {
