@@ -19,7 +19,7 @@ session_start();
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="d-md-flex d-block flex-row mx-md-auto mx-0">
-            <a class="navbar-brand" href="#">Your Project</a>
+            <a class="navbar-brand" href="#">CS230Lab Project</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,6 +35,9 @@ session_start();
                         <a class="nav-link" href="gallery.php">Gallery</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="admin.php">AddItem</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="profile.php">Profile</a>
                     </li>';
                     }
@@ -48,7 +51,7 @@ session_start();
                     }
                     ?>
                     <li class="nav-item active">
-                        <a class="nav-link" href="../about.php">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.php">Home<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>

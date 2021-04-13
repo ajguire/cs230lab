@@ -33,6 +33,7 @@ if (mysqli_num_rows($result) > 0) {
                 <h4 class="mt-0">'.$row['uname'].'</h4>
                 <h5>Rating:'.$row['ratingnum'].'</h5>
                 <p>'.$row['revdate'].' </p>
+                <h5>'.$row['title'].'</h5>
                 <p>'.$row['reviewtext'].'</p>
             </div>
         </div>

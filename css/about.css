@@ -16,6 +16,8 @@ p {
 }
 
 img{
+    margin-left: auto;
+    margin-right: auto;
     height: 250px;
     width: 250px;
 }
@@ -23,7 +25,7 @@ img{
 .column{
     float: left;
     margin-right: 16px;
-    margin: 10px;
+    margin: 10xp;
     width: 20%;
 }
 
