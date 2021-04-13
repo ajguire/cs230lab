@@ -27,7 +27,7 @@ require 'includes/header.php'
                 <img src="images/horner.jpeg">
                 <div class="container">
                     <h2>RedBull Team Principal</h2>
-                    <p>Christian Horner UPDATED</p>
+                    <p>Christian Horner</p>
                     <p>Email: chorner@rbr</p>
                 </div>
             </div>
